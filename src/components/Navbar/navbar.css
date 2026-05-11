@@ -1,0 +1,63 @@
+.navbar{
+    height: 5rem;
+    margin: 1rem auto;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    position: sticky;
+    z-index: 99;
+    font-size: 18px;
+    font-family: Satoshi-Variable;
+    font-weight: 500 ;
+}
+
+.LogoImg{
+    object-fit:cover;
+    width: 5rem;
+    height: 5rem;
+}
+
+.desktopMenu{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.desktopMenuListItem {
+    color: #d4d4d8;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.desktopMenuListItem:hover {
+    color: white;
+
+    text-shadow: 0 0 8px rgba(255,255,255,0.6);
+}
+
+.desktopMenuResumeBtn{
+    background: transparent;
+    color: white;
+    border: 1px solid #333;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    font-family: Satoshi-Variable;
+    font-weight: 500;    
+    gap: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    /* backdrop-filter: blur(10px); */
+    box-shadow: 0 0 20px rgba(255,255,255,0.05);
+    transition: all 0.3s ease;
+}
+.desktopMenuResumeBtn:hover {
+  background: white;
+  color: #060606;
+
+  transform: translateY(-2px);
+}
