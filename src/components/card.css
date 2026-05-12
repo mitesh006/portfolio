@@ -1,0 +1,31 @@
+.card {
+    flex: 1;
+    width: 240px;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 1.5em;
+    border: 1px solid var(--border-primary);
+    background: radial-gradient(circle at top left ,var(--shadow-comp), transparent 65%);
+    padding: 2.5rem 2rem;
+    transition: 0.3s ease;
+    border-radius: 55px;
+    cursor:pointer;
+}
+
+.card:hover {
+    border-color: var(--border-hover);
+    transform: translateY(-4px);
+    box-shadow: 0 0 42px var(--shadow-comp);    
+}
+.card-metric {
+    font-family: Satoshi-Variable;
+    font-size: 3rem;
+    font-weight: 350;
+}
+
+.card-desc {
+    color: var(--text-secondary);
+    font-size: 1.4rem;
+    font-weight: 350;
+}

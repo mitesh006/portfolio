@@ -3,6 +3,8 @@ import './navbar.css'
 import Logo from '../../assets/imgs/logo.png'
 import {Link} from 'react-scroll'
 import { DownloadIcon } from 'lucide-react'
+import Button from '../../components/button'
+
 const Navbar = () => {
   return (
     <nav className='navbar'>
@@ -17,9 +19,12 @@ const Navbar = () => {
         <Link className='desktopMenuListItem'>Contact</Link>
         
       </div>
-      <button className='desktopMenuResumeBtn'>
-        Download CV<DownloadIcon size={18}/>
-      </button>
+      <Button 
+        className={'desktopMenuResumeBtn'}
+        text={'Download CV'}
+        icon={<DownloadIcon size={18}/>}
+      />
+
     </nav>
   )
 }

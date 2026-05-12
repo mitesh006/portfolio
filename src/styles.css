@@ -1,5 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('./assets/fonts/Satoshi/css/satoshi.css');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    /* Backgrounds */
+--bg-primary: #060606;
+--bg-secondary: #0a0a0a;
+--bg-card-hover: rgba(255, 255, 255, 0.03);
+
+/* Borders */
+--border-primary: rgba(255, 255, 255, 0.08);
+--border-hover: rgba(255, 255, 255, 0.16);
+
+/* Text */
+--text-primary: #ffffff;
+--text-secondary: rgba(255, 255, 255, 0.72);
+--text-muted: rgba(255, 255, 255, 0.5);
+
+/* Accent / Icons */
+--accent-blue: #61dafb;
+--accent-gray: #cfcfcf;
+
+/* Gradients */
+--gradient-card: rgba(255, 255, 255, 0.05);
+
+/* Shadows */
+--shadow-text: rgba(255, 255, 255, 0.55);
+--shadow-comp: rgba(255, 255, 255, 0.05);
+
+/* Lines / Dividers */
+--divider: rgba(255, 255, 255, 0.06);
+}
 
 * {
     margin: 0;
@@ -11,8 +41,8 @@
 
 
 body {
-    background: #060606;
-    color: #ffffff;
+    background: var(--bg-primary);
+    color: var(--text-primary);
     overflow: hidden;
     overflow-y: scroll;
     font-family: Inter;

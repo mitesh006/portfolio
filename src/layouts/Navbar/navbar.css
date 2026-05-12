@@ -1,0 +1,54 @@
+.navbar{
+    margin: 1rem auto;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    /* position: sticky; */
+    top: 1rem;
+    z-index: 99;
+    font-size: 18px;
+    font-family: Satoshi-Variable;
+    font-weight: 500 ;
+}
+
+.LogoImg{
+    object-fit:cover;
+    height: 3rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.LogoImg:hover{
+    transform: scale(1.01);
+    filter: drop-shadow(0 0 12px var(--shadow-text));
+}
+
+.desktopMenu{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 4.5rem;
+}
+
+.desktopMenuListItem {
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.desktopMenuListItem:hover {    
+    color: var(--text-primary);
+
+    text-shadow: 0 0 8px var(--shadow-text);
+}
+
+.desktopMenuResumeBtn{
+    justify-self: end;
+}
+
+.desktopMenuResumeBtn:hover {
+  background: var(--text-primary);
+  box-shadow: 0 0 20px var(--shadow-comp);
+  color: var(--bg-primary);
+  transform: translateY(-2px);
+}
