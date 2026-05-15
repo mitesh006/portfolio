@@ -1,9 +1,9 @@
 .card {
     flex: 1;
-    width: 240px;
-    position: relative;
+    width: 210px;
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    overflow: hidden;
+    grid-template-rows: 1fr 1fr auto;
     gap: 1.5em;
     border: 1px solid var(--border-primary);
     background: radial-gradient(circle at top left ,var(--shadow-comp), transparent 65%);
@@ -18,14 +18,14 @@
     transform: translateY(-4px);
     box-shadow: 0 0 42px var(--shadow-comp);    
 }
-.card-metric {
+.card h2 {
     font-family: Satoshi-Variable;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 350;
 }
 
-.card-desc {
+.card p {
     color: var(--text-secondary);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 350;
 }

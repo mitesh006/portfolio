@@ -3,24 +3,16 @@
 }
 
 .skills-container {
-    max-width: 1600px;
+    max-width: 1600px;  
     margin: 0 auto;
 }
 
 .skills-title {
     text-align: center;
-    font-family: Satoshi-Variable;
-    color: var(--text-secondary);
-    font-weight: 400;
 }
 
 .skills-intro {
     text-align: center;
-    margin-top: 1.5rem;
-    font-size: 3rem;
-    line-height: 1;
-    font-weight: 300;
-    letter-spacing: -1px;
 }
 
 .stack {

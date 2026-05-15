@@ -25,7 +25,7 @@ cursor: pointer;
 }
 
 .tech-item:hover img {
-    box-shadow: 0 0 36px rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 54px var(--shadow-comp);
 }
 .tech-item:hover span    {
     color: var(--text-primary);

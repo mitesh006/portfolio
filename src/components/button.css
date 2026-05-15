@@ -1,7 +1,7 @@
 .btn {
-    background: transparent;
+    background: var(--bg-secondary);
     color: var(--text-primary);
-    border: 1px solid var(--border-hover);
+    border: 1px solid var(--border-primary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,7 +12,11 @@
     gap: 10px;
     border-radius: 8px;
     cursor: pointer;
-    
     transition: all 0.3s ease;
 }
 
+.alt {
+    background: var(--text-primary);
+    color: var(--bg-primary);
+    border: none;
+}

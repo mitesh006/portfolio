@@ -1,0 +1,25 @@
+.project-section {
+    padding: 64px 24px;
+    border: none;
+}
+
+.project-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.proj-title {
+    text-align: center;
+}
+
+
+.proj-intro {
+    text-align: center;
+}
+
+.proj-cards {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}

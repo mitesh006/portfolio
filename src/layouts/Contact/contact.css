@@ -1,0 +1,46 @@
+.contact-section {
+    background: var(--bg-secondary);
+    margin-top: 5rem;
+    border-top: 2px solid var(--divider);
+}
+
+.contact-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 24px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name {
+    font-family: Satoshi-Variable;
+    color: var(--text-muted);
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.links  {
+    display: flex;
+    gap: 1rem;
+}
+
+.link  {
+    color: var(--text-muted);
+    font-size: 20px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-primary);
+    transition: 0.3s ease;
+}
+
+.link:hover {
+    color: var(--text-primary);
+    border-color: var(--border-hover);
+    text-shadow: 0 0 25px var(--shadow-text);
+}

@@ -6,11 +6,11 @@ const Card = ({icon,metric,desc}) => {
         <div className='card'>
             
             {icon}
-            <p className="card-metric">
+            <h2>
                 {metric}
-            </p>
+            </h2>
 
-            <p className="card-desc">
+            <p>
                 {desc}
             </p>
         </div>

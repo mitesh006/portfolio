@@ -6,10 +6,10 @@ import Me from '../../assets/imgs/me.png'
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero" id='Hero'>
       <div className="hero-container">
         <div className="hero-content">
-          <p className='hero-title'>Hi, I'm Mitesh Patil</p>
+          <p className='hero-title title'>Hi, I'm Mitesh Patil</p>
 
 
 
@@ -20,7 +20,7 @@ const Hero = () => {
           
           </h1>
           
-          <p className='hero-desc'>
+          <p className='hero-desc desc '>
           A passionate Full Stack Developer crafting <br />
           modern web applications with clean code <br />
           and creative design.
@@ -28,7 +28,7 @@ const Hero = () => {
 
           <div className="buttons">
             <Button 
-            className={'Work'}
+            className={'Work alt'}
             text={'View My Work'}
             icon={<ArrowUpRight size={18}/>}
             />
