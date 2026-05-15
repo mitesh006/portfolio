@@ -1,6 +1,5 @@
 import React from 'react'
 import './projects.css'
-import {ArrowRight} from 'lucide-react'
 import Proj from '../../components/proj'
 import Snake from '../../assets/imgs/snake.png'
 import Stock from '../../assets/imgs/stock.png'

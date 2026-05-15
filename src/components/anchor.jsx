@@ -1,5 +1,6 @@
 import React from 'react'
 import './anchor.css'
+import './button.css'
 
 const Anchor = ({text, icon, className, link, download=false}) => {
   return (
@@ -7,7 +8,6 @@ const Anchor = ({text, icon, className, link, download=false}) => {
     href={link} 
     download={download}
     className={`btn ${className}`}
-    target="_blank"
     rel="noopener noreferrer"
     >
         {text}

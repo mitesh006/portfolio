@@ -1,12 +1,12 @@
 import React from 'react'
 import {ArrowUpRight} from 'lucide-react'
 import  './hero.css'
-import Button from '../../components/button'
+import Go from '../../components/links'
 import Me from '../../assets/imgs/me.png'
 
 const Hero = () => {
   return (
-    <section className="hero" id='Hero'>
+    <section className="hero" id='Hero '>
       <div className="hero-container">
         <div className="hero-content">
           <p className='hero-title title'>Hi, I'm Mitesh Patil</p>
@@ -27,13 +27,15 @@ const Hero = () => {
           </p>
 
           <div className="buttons">
-            <Button 
+            <Go 
+            link={'Projects'}
             className={'Work alt'}
             text={'View My Work'}
             icon={<ArrowUpRight size={18}/>}
             />
 
-            <Button 
+            <Go
+            link={'Contact'}
             className={'Contact'}
             text={'Contact Me'}
             icon={<ArrowUpRight size={18}/>}
