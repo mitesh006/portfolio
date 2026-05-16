@@ -27,23 +27,23 @@ const About = () => {
             
             <div className="about-cards">
                 <Card
-                icon={<Notebook size={56} stroke='#a1a1aa' strokeWidth={1}/>}
+                icon={<Notebook stroke='#a1a1aa' strokeWidth={1}/>}
                 metric={'7.48'}
                 desc={'CGPA'}
                 />
                 <Card
-                icon={<Cpu size={56} stroke='#a1a1aa' strokeWidth={1}/>}
+                icon={<Cpu stroke='#a1a1aa' strokeWidth={1}/>}
                 metric={'10+'}
                 desc={'Technologies'}
                 />
                 <Card
-                icon={<Code size={56} stroke='#a1a1aa' strokeWidth={1}/>}
+                icon={<Code stroke='#a1a1aa' strokeWidth={1}/>}
                 metric={'8+'}
                 desc={'Projects'}
                 />
                 <Card
-                icon={<Coffee size={56} stroke='#a1a1aa' strokeWidth={1}/>}
-                metric={<Infinity size={56} strokeWidth={1}/>}
+                icon={<Coffee stroke='#a1a1aa' strokeWidth={1}/>}
+                metric={<Infinity strokeWidth={1}/>}
                 desc={'Cups of Coffee'}
                 />
             </div>

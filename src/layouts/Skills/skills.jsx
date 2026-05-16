@@ -21,15 +21,15 @@ const Skill = () => {
           <Tech logo={'cpp'} text={'C++'}/>
           <Tech logo={'java'} text={'Java'}/>
           <Tech logo={'python'} text={'Python'}/>
-          <Tech logo={'nodejs'} text={'NodeJs'}/>
-          <Tech logo={'mongodb'} text={'MongoDB'}/>
-          <Tech logo={'react'} text={'React'}/>
-          <Tech logo={'vite'} text={'Vite'}/>
+          <Tech logo={'aws'} text={'AWS'}/>
           <Tech logo={'postman'} text={'Postman'}/>
           <Tech logo={'postgres'} text={'SQL'}/>
-          <Tech logo={'aws'} text={'AWS'}/>
           <Tech logo={'vercel'} text={'Vercel'}/>
-          <Tech logo={'github'} text={'Git & Github'}/>
+          <Tech logo={'mongodb'} text={'MongoDB'}/>
+          <Tech logo={'vite'} text={'Vite'}/>
+          <Tech logo={'nodejs'} text={'NodeJs'}/>
+          <Tech logo={'react'} text={'React'}/>
+          <Tech logo={'github'} text={'Github'}/>
         </div>
       </div>
     </section>

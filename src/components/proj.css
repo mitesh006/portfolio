@@ -16,12 +16,11 @@
 .proj-item img {
     display: block;
     aspect-ratio: 16/9;
-    width:100%; 
+    width: 100%; 
 }
 
 .item-content {
     display: flex;
-    /* background: var(--bg-secondary); */
     background: radial-gradient(circle at top right ,var(--shadow-comp), transparent 65%);
     flex-direction: column;
     padding: 1.5rem;
@@ -78,3 +77,70 @@
     padding: 10px 18px;
 }
 
+/* ── Mobile ── */
+
+@media (max-width: 768px) {
+    
+    .proj-item {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+
+    .item-content h4 {
+        font-size: 18px;
+        margin-bottom: 14px;
+    }
+    
+    .item-content p {
+        font-size: 12px;
+        margin-bottom: 24px;
+    }
+
+    .tech-stack span {
+        font-size: 7px;
+    }
+
+    .Code, .Link {
+        font-size: 10px;
+        padding: 10px 16px;
+    }
+}
+
+/* Tablet */
+
+@media (max-width:1408px) and (min-width:768px) {
+    
+    .proj-item {
+        width: 600px;
+        flex-direction: row;
+    }
+    
+    .item-image {
+        flex: 1;
+    }
+    
+    .proj-item img {
+        height: 300px;
+        object-fit: cover;
+    }
+    
+    .item-content {
+        flex: 1;
+    }
+    
+    .item-content p {
+        font-size: 12px;
+        margin-bottom: 24px;
+    }
+    
+    .tech-stack span {
+        font-size: 7px;
+    }
+    
+    .Code, .Link {
+        font-size: 10px;
+        padding: 10px 16px;
+    }
+
+}

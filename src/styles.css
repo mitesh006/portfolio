@@ -35,14 +35,19 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+
+    overflow-x: hidden;
 }
 
 
 body {
     background: var(--bg-primary);
     color: var(--text-primary);
-    overflow: hidden;
-    overflow-y: scroll;
+    overflow-x: hidden;
     font-family: Inter;
 }
 
@@ -69,3 +74,38 @@ section {
     border-image-source: linear-gradient(to right, transparent,var(--divider) 2%,var(--divider) 98%, transparent);
     border-image-slice: 1;
 }
+
+svg {
+    width: 1em;
+    height: 1em;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fbfbfb;
+}
+
+/* ── Global Mobile ── */
+@media (max-width: 768px) {
+    .intro {
+        font-size: 2rem;
+        letter-spacing: -0.5px;
+    }
+
+    .title {
+        letter-spacing: 2px;
+    }
+}
+

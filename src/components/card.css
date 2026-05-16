@@ -1,10 +1,9 @@
 .card {
     flex: 1;
-    width: 210px;
     display: grid;
     overflow: hidden;
-    grid-template-rows: 1fr 1fr auto;
-    gap: 1.5em;
+    grid-template-rows: auto 1fr auto;
+    gap: 1rem;
     border: 1px solid var(--border-primary);
     background: radial-gradient(circle at top left ,var(--shadow-comp), transparent 65%);
     padding: 2.5rem 2rem;
@@ -18,10 +17,23 @@
     transform: translateY(-4px);
     box-shadow: 0 0 42px var(--shadow-comp);    
 }
+
+.icon-wrapper {
+    display: flex;
+    font-size: 48px;
+}
+
+
 .card h2 {
     font-family: Satoshi-Variable;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     font-weight: 350;
+    display: flex;
+    align-items: center;
+}
+
+.card h2 svg {
+    font-size: 56px;
 }
 
 .card p {
@@ -29,3 +41,58 @@
     font-size: 1.2rem;
     font-weight: 350;
 }
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    
+    .icon-wrapper {
+        font-size: 36px;
+    }
+
+    .card {
+        width: px;
+        border-radius: 36px;
+        padding: 1.8rem 1.4rem;
+    }
+    
+    .card h2 {
+        font-size: 1.5rem;
+        
+    }
+    .card h2 svg {
+        font-size: 36px;
+    }
+
+    .card p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Tablet */
+
+@media (max-width:1408px) and (min-width:768px) {
+    
+    .icon-wrapper {
+        font-size: 36px;
+    }
+    
+    .card {
+        width: px;
+        border-radius: 36px;
+        padding: 1.8rem 1.4rem;
+    }
+    
+    .card h2 {
+        font-size: 1.5rem;
+        
+    }
+    .card h2 svg {
+        font-size: 36px;
+    }
+    
+    .card p {
+        font-size: 0.8rem;
+    }
+}
+

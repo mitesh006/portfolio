@@ -2,8 +2,9 @@
 display: flex;
 flex-direction: column;
 align-items: center;
+width: 100px;
 gap: 12px;
-padding: 12px 6px;
+padding: 12px 0;
 transition: 0.3s ease;
 cursor: pointer;
 }
@@ -11,6 +12,7 @@ cursor: pointer;
     font-family: Satoshi-Variable;
     color: var(--text-muted);
     font-weight: 350;
+    font-size: 16px;
     letter-spacing: 1px;
     transition: 0.3s ease;
 }
@@ -18,6 +20,7 @@ cursor: pointer;
 .tech-item img {
     border-radius: 18px;
     transition: 0.3s ease;  
+    width: 70%;
 }
 .tech-item:hover  {
     transform: translateY(-4px);
@@ -31,3 +34,44 @@ cursor: pointer;
     color: var(--text-primary);
     text-shadow: 0 0 12px var(--shadow-text);
 }
+
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+    
+    
+    .tech-item {
+        width: 90px;
+        gap: 8px;
+    }
+    
+    .tech-item span {
+        font-size: 14px;
+    }
+    
+    .tech-item img {
+        width: 45%;
+        border-radius: 10px;
+    }
+}
+
+
+@media (max-width:1408px) and (min-width:768px) {
+    
+    
+    .tech-item {
+        width: 60px;
+        gap: 10px;
+    }
+    
+    .tech-item img {
+        width: 80%;
+        border-radius: 14px;
+    }
+    
+    .tech-item span {
+        font-size: 14px;
+    }
+
+}
+

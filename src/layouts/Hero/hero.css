@@ -1,5 +1,5 @@
 .hero {
-    padding:64px 24px;
+    padding: 64px 24px;
     padding-bottom: 0;
 }
 
@@ -26,7 +26,7 @@
     line-height: 1;
     font-weight: 500;
     letter-spacing: -3px;
-    
+
 }
 
 .hero-intro span {
@@ -47,14 +47,15 @@
     display: flex;
     margin-top: 4rem;
     gap: 2rem;
+    flex-wrap: wrap;
 }
-
 
 .Work:hover,
 .Contact:hover {
     transform: translateY(-2px);
     box-shadow: 0 0 20px var(--shadow-comp);
 }
+
 .hero-image {
     flex: 1;
     display: flex;
@@ -64,18 +65,18 @@
 }
 
 .hero-image::before {
-
+    
     content: '';
-
+    
     position: absolute;
-
+    
     width: 600px;
     height: 750px;
-
+    
     background: var(--shadow-comp);
-
+    
     border-radius: 50%;
-
+    
     filter: blur(80px);
     z-index: -1;
 }
@@ -85,3 +86,152 @@
     height: 750px;
 }
 
+/* ── Mobile header (logo + resume) — hidden on desktop ── */
+.mobile-header {
+    display: none;
+}
+
+/* ── Resume button inside hero buttons — hidden on desktop ── */
+.heroMobileResumeBtn {
+    display: none;
+}
+
+/* ── Mobile breakpoint ── */
+@media (max-width: 768px) {
+    
+    .hero {
+        padding: 24px 20px;
+        padding-bottom: 0;
+    }
+    
+    /* Show mobile header */
+    .mobile-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+    
+    .mobile-logo {
+        height: 2.4rem;
+        object-fit: cover;
+    }
+    
+    
+    
+    /* Stack hero content + image vertically, image on top */
+    .hero-container {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .hero-content {
+        flex: none;
+    }
+    
+    .hero-title {
+        font-size: 0.85rem;
+        margin-top: 1.5rem;
+    }
+    
+    .hero-intro {
+        margin-top: 1.2rem;
+        font-size: 2.8rem;
+        letter-spacing: -1.5px;
+    }
+    
+    .hero-intro span {
+        font-size: 3rem;
+    }
+    
+    .hero-desc {
+        margin-top: 1.2rem;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    .buttons {
+        margin: 2rem 0;
+        gap: 1rem;
+    }
+    
+    /* Show resume btn inside the buttons row on mobile */
+    .heroMobileResumeBtn {
+        display: flex;
+    }
+
+    /* Hero image: centered, no left offset, smaller */
+    .hero-image {
+        flex: none;
+        left: 0;
+        justify-content: center;
+    }
+
+    .hero-image::before {
+        width: 320px;
+        height: 400px;
+    }
+
+    .me {
+        height: 340px;
+    }
+}
+
+
+/* Tablet */
+
+@media (max-width: 1408px) and (min-width: 768px) {
+
+
+    .hero-container {
+        max-width:800px;
+    }
+
+    .hero {
+        padding: 24px 20px;
+        padding-bottom: 0;
+    }
+
+    
+    .hero-title {
+        font-size: 1.2rem;
+        margin-top: 3rem;
+    }
+    
+    .hero-intro {
+        margin-top: 2.5rem;
+        font-size: 3rem;
+        letter-spacing: -1.5px;
+    }
+    
+    .hero-intro span {
+        font-size: 3.2rem;
+    }
+    
+    .hero-desc {
+        margin-top: 2.5rem;
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+    .buttons {
+    margin-top: 3rem;
+    gap: 1.5rem;
+}
+
+    .hero-image {
+        left: 2rem;
+    }
+
+
+
+    .me {
+        height: 550px;
+    }
+
+    
+
+
+    
+    
+    
+}

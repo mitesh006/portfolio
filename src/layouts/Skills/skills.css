@@ -24,3 +24,24 @@
     column-gap: 110px;
 }
 
+/* ── Mobile ── */
+@media (max-width: 768px) {
+
+    .skills {
+        padding: 42px 16px;
+    }
+
+    .stack {
+        margin-top: 1.5rem;
+        gap: 8px;
+    }
+}
+
+
+@media (max-width:1408px) and (min-width:768px) {
+
+    .skills-container {
+        max-width: 800px;
+    }
+
+}
