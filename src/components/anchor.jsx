@@ -8,6 +8,7 @@ const Anchor = ({text, icon, className, link, download=false}) => {
     href={link} 
     download={download}
     className={`btn ${className}`}
+    target='_blank'
     rel="noopener noreferrer"
     >
         {text}
