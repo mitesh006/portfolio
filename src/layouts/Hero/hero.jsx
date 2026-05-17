@@ -46,7 +46,7 @@ const Hero = () => {
               download={true}
               text={'Resume'}
               icon={<DownloadIcon size={18}/>}
-              link={'/Mitesh Patil.pdf'}
+              link={'/MiteshPatil.pdf'}
             />
 
           </div>
