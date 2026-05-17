@@ -9,7 +9,7 @@ import { DownloadIcon } from 'lucide-react'
 
 const Hero = () => {
   return (
-    <section className="hero" id='Hero '>
+    <section className="hero" id='Hero'>
 
       {/* Mobile-only top bar: Logo + Resume */}
       <div className="mobile-header">
@@ -54,7 +54,7 @@ const Hero = () => {
         </div>
 
         <div className="hero-image">
-            <img src={Me} className='me' alt="Me" />
+          <img src={Me} className='me' alt="Me" />
         </div>
 
       </div>

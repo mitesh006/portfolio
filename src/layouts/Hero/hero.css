@@ -84,6 +84,11 @@
 .me {
     object-fit: cover;
     height: 750px;
+    mask-image: linear-gradient(
+    to bottom,
+    black 75%,
+    transparent 100%
+  );
 }
 
 /* ── Mobile header (logo + resume) — hidden on desktop ── */
